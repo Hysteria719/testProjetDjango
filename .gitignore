@@ -1,0 +1,49 @@
+# Fichiers générés par l'interpréteur Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Fichiers générés par l'environnement virtuel
+venv/
+venv3/
+__env__/
+
+# Fichiers spécifiques à l'IDE Visual Studio Code
+.vscode/
+
+# Fichiers spécifiques à l'IDE PyCharm
+.idea/
+
+# Fichiers de configuration Django
+*.log
+db.sqlite3
+
+# Fichiers de sauvegarde
+*.bak
+*.swp
+
+# Fichiers de configuration pour les environnements spécifiques
+*.env
+
+# Fichiers de logs
+logs/
+
+# Fichiers de cache
+__pycache__/
+
+# Fichiers de sauvegarde Django
+*.dump
+*.db
+
+# Fichiers de sauvegarde pyenv
+.python-version
+
+# Fichiers de sauvegarde Heroku
+.DS_Store
+
+# Fichiers temporaires
+*.tmp
+*.log
+*.pid
+*.db-journal
