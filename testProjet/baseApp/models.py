@@ -8,9 +8,7 @@ class User(AbstractUser):
 
 class DevTeams(models.Model):
     nom = models.CharField(max_length=50)
-    user = models.ForeignKey(User, on_delete = models.CASCADE, null=True)
-
-    
+    user = models.ForeignKey(User, on_delete = models.CASCADE)    
 
 class Categorie(models.Model):
     nom = models.CharField(max_length=255, unique=True)
@@ -26,6 +24,7 @@ class Article(models.Model):
   #  auteur = models.ForeignKey(User, on_delete = models.CASCADE)
     date_creation = models.DateTimeField(auto_now_add=True)
     date_modification = models.DateTimeField(auto_now=True)
+    responsable = models.ForeignKey(DevTeams, on_delete= models.CASCADE)
 
     
 

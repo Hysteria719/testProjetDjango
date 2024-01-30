@@ -18,7 +18,8 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 
-from baseApp.views import CategoryViewset, ArticleViewset, CategoryNoDestroy, ArtSearchByIdCat
+
+from baseApp.views import CategoryViewset, ArticleViewset, CategoryNoDestroy, ArtSearchByIdCat, devices_json
 
 router = routers.SimpleRouter()
 router.register('category', CategoryViewset, basename='category')
@@ -29,6 +30,6 @@ router.register('art-by-idcat',ArtSearchByIdCat, basename='art-be-idcat')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
-    path('api/', include(router.urls))
-
+    path('api/', include(router.urls)),
+    path('devices/json/', devices_json, name='devices_json')
 ]
